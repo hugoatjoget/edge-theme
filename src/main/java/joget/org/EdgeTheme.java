@@ -4,13 +4,12 @@ import java.util.Map;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.Element;
 import org.joget.apps.app.service.AppUtil;
-import org.joget.plugin.enterprise.UniversalTheme;
 
-public class AngleTheme extends UniversalTheme {
+public class EdgeTheme extends AngleTheme {
     
     @Override
     public String getName() {
-        return "Angle Theme";
+        return "Edge Theme";
     }
 
     @Override
@@ -25,7 +24,7 @@ public class AngleTheme extends UniversalTheme {
     
     @Override
     public String getDescription() {
-        return "A Progressive Web App Angle Theme based on Material Design";
+        return "Edge Theme Based on Angle Theme";
     }
     
     @Override
@@ -40,7 +39,7 @@ public class AngleTheme extends UniversalTheme {
     
     @Override
     public String getPropertyOptions() {
-        return AppUtil.readPluginResource(getClass().getName(), "/properties/angleTheme.json", null, true, "/messages/angleTheme");
+        return AppUtil.readPluginResource(getClass().getName(), "/properties/edgeTheme.json", null, true, "/messages/angleTheme");
     }
     
     @Override

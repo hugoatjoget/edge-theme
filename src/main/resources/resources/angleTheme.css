@@ -373,7 +373,7 @@ body.has_home_banner #main{
 body.embeded #main, body.embeded.has_home_banner #main {
     margin-top:0px;
     padding-bottom: 0;
-    padding-top: 0 !important;
+    padding-top: 0;
     min-height: auto;
 }
 
@@ -642,7 +642,7 @@ body#login #page > footer {
     border-radius: 50%;
     line-height: 46px!important;
     margin-top: -85px;
-    right: 40px;
+    right: -25px;
     position: absolute;
 }
 
@@ -794,7 +794,6 @@ body#login #page > footer {
 #sidebar li ul>li>a, #sidebar li ul>li>.sidemenu_inner {
     padding: 8px 20px 8px 65px;
     display: block;
-    overflow: auto;
 }
 .rtl #sidebar li ul>li>a, .rtl #sidebar li ul>li>.sidemenu_inner {
     padding: 8px 65px 8px 20px;
@@ -900,8 +899,8 @@ body#login #page > footer {
         background: #f5f7fa;
     } 
     body.embeded div#content{
-        padding-left: 0px !important;
-        padding-right: 0px !important;
+        padding-left: 20px;
+        padding-right: 20px;
         background: #fff;
     }
     body.horizontal_menu #sidebar {
@@ -1839,13 +1838,6 @@ body .form-cell .grid thead tr, body .subform-cell .grid thead tr {
 
 .badge{
     border: 1px solid #fffcfc;
-    max-width: 20%;
-}
-
-.menu-container > li > a > span:nth-child(1) {
-    float: left;
-    max-width: 80%;
-    white-space: normal;
 }
 
 body .grid-stack-item .grid-stack-item-content {
@@ -2112,45 +2104,4 @@ main .dataList .exportlinks span.export {
 
 .user-menu:hover{
     opacity: 0.9;
-}
-
-.adjustfontSize{
-    position: relative;
-    height: 50px;
-    display: block;
-    padding: 10px !important;
-    padding-right: 20px;
-}
-.buttonFontSize {
-    font-size: 20px !important;
-    color: #6c757d !important;
-    background-color: #ffffff !important;
-    margin-left: 1px !important;
-    padding: 3px 9px;
-    outline:none !important;
-    border: none !important;
-}
-.footable-buttons > button{
-    margin-bottom: 5px;
-}
-@media screen and (max-width: 480px) {
-    main .form-row label {
-        width: 100%;
-    }
-}
-.largeFontSize #form-canvas *,
-.largeFontSize .fc-view-container *,
-.largeFontSize .userProfile-body-content *,
-.largeFontSize .dataList *,
-.largeFontSize .ui-html *:not(h1):not(h2):not(h3):not(h4):not(h5){
-    font-size: 20px !important;
-    line-height: 25px !important;
-}
-.mediumFontSize #form-canvas *,
-.mediumFontSize .fc-view-container *,
-.mediumFontSize .userProfile-body-content *,
-.mediumFontSize .dataList *,
-.mediumFontSize .ui-html *:not(h1):not(h2):not(h3):not(h4):not(h5){
-    font-size: 17px !important;
-    line-height: 20px !important;
 }
