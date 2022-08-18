@@ -14,7 +14,8 @@ public class Activator implements BundleActivator {
         registrationList = new ArrayList<ServiceRegistration>();
 
         //Register plugin here
-        registrationList.add(context.registerService(AngleTheme.class.getName(), new AngleTheme(), null));
+        //registrationList.add(context.registerService(AngleTheme.class.getName(), new AngleTheme(), null));
+        registrationList.add(context.registerService(EdgeTheme.class.getName(), new EdgeTheme(), null));
     }
 
     public void stop(BundleContext context) {

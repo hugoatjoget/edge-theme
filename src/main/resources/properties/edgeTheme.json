@@ -20,13 +20,14 @@
         {
             value : 'no',
             label : '@@theme.universal.menu.no@@'
-        }]
+        }],
+        value : 'true'
     },
     {
         name : 'dx8primaryColor',
         label : '@@theme.universal.primaryColor@@',
         type : 'color',
-        value: '#016CF9'
+        value: '#FF5622'
     },
     {
         name : 'dx8linkColor',
@@ -38,7 +39,7 @@
         name : 'dx8buttonBackground',
         label : '@@theme.universal.buttonColor@@',
         type : 'color',
-        value: '#016CF9'
+        value: '#FF5622'
     },
     {
         name : 'dx8buttonColor',
@@ -50,7 +51,7 @@
         name : 'dx8navLinkColor',
         label : '@@theme.universal.menuFontColor@@',
         type : 'color',
-        value: '#000000'
+        value: '#FFFFFF'
     },
     {
         name : 'dx8menuRowCountColor',
@@ -100,7 +101,8 @@
         appPath: '[APP_PATH]',
         allowInput : 'true',
         isPublic : 'true',
-        imageSize : 'width:80px; height:35px; background-size: contain; background-repeat: no-repeat;'
+        imageSize : 'width:80px; height:35px; background-size: contain; background-repeat: no-repeat;',
+        value : ''
     },
     {
         name : 'profile',
@@ -241,7 +243,8 @@
         name : 'css',
         label : '@@theme.universal.customCss@@',
         type : 'codeeditor',
-        mode : 'css'
+        mode : 'css',
+        value : 'row-count{\n    color: #ff5622;\n}\n\n.btn.waves-input-wrapper {\n    color: #ffffff !important;\n    background-color: #ff5622 !important;\n}\n\n.form-section-title {\n    background: #ff5622;\n    border-radius: 0;\n}\n\nlegend, body #form-canvas .form-section-title span {\n    color: white;\n    padding: 10px;\n}\n\n.btn.waves-input-wrapper {\n    color: #ffffff !important;\n    background-color: #ff5622 !important;\n}\n\nheader.navbar{\n    background-image: linear-gradient(90deg, #ff5622, #3c2d26);\n}\n\n@media (min-width: 768px){\n    body.horizontal_menu #sidebar{\n        background-image: linear-gradient(90deg, #ff5622, #3c2d26);\n    }\n}\n\n@media (max-width:768px) {\n    #navigation > ul.user-menu.nav.nav-tabs.nav-stacked.main-menu > li > a > span,\n    .main-menu.nav-tabs > li.mm-profile a small, \n    body.horizontal_menu #sidebar a, .main-menu.nav-tabs > li.active > a, .main-menu.nav-tabs a.active{\n        color: rgb(39, 39, 39);\n    }\n    \n    body.horizontal_menu #sidebar .nav > li:hover ul{\n        border: none;\n    }\n}\n\n.main-menu.nav-tabs > li.active > a {\n    border: unset !important;\n}\n\n.btn.waves-input-wrapper {\n    color: #ffffff !important;\n    background-color: #ff5622 !important;\n}\n.form-cell .btn {\n    width: 100px;\n    height: 45px;\n}\n.form-cell .btn input{\n    margin-top: 7px;\n}\n\nbody input:not([type]):focus:not([readonly]), body input[type=text]:focus:not([readonly]), body input[type=password]:focus:not([readonly]), body input[type=email]:focus:not([readonly]), body input[type=url]:focus:not([readonly]), body input[type=time]:focus:not([readonly]), body input[type=date]:focus:not([readonly]), body input[type=datetime]:focus:not([readonly]), body input[type=datetime-local]:focus:not([readonly]), body input[type=tel]:focus:not([readonly]), body input[type=number]:focus:not([readonly]), body input[type=search]:focus:not([readonly]), body textarea:focus:not([readonly]), body select:focus:not([readonly]):not([class^=ui]), body input.focus, body .editor-cell input:not([type]):focus:not([readonly]), body .editor-cell input[type=text]:focus:not([readonly]), body .editor-cell input[type=password]:focus:not([readonly]), body .editor-cell input[type=email]:focus:not([readonly]), body .editor-cell input[type=url]:focus:not([readonly]), body .editor-cell input[type=time]:focus:not([readonly]), body .editor-cell input[type=date]:focus:not([readonly]), body .editor-cell input[type=datetime]:focus:not([readonly]), body .editor-cell input[type=datetime-local]:focus:not([readonly]), body .editor-cell input[type=tel]:focus:not([readonly]), body .editor-cell input[type=number]:focus:not([readonly]), body .editor-cell input[type=search]:focus:not([readonly]), body .editor-cell textarea:focus:not([readonly]), body .editor-cell select:focus:not([readonly]):not([class^=ui]), body .editor-cell input.focus{\n    border: 1px solid #ffb8a2;\n}\n\nmain input:not([type]), main input[type=text], main input[type=password], main input[type=email], main input[type=url], main input[type=time], main input[type=date], main input[type=datetime], main input[type=datetime-local], main input[type=tel], main input[type=number], main input[type=search], main textarea, main select:not([class^=ui]){\n    background: #eee;    \n}\n\nlegend, body #form-canvas .form-section-title span, body #form-canvas .subform-section-title span {\n    text-transform: capitalize !important;\n}\n .btn, .btn.focus, .btn:focus, .btn:hover, .btn:active {\n    background: #ff5622;\n}\n\n#header-name{\n    width: 600px;\n}\n\n#header-name span {\n    vertical-align: middle;\n    font-size: larger;\n}\n\n#header-name a#header-link{\n    vertical-align: middle;\n}'
     },
     {
         name : 'js',

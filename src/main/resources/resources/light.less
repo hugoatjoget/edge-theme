@@ -24,7 +24,7 @@ a {
     color: @accent;
 }
 .dataList table a {
-    color: @accent;
+    color: darken(@accent, 5%);
 }
 .dataList table a:hover,
 a:focus, a:hover {
@@ -95,6 +95,7 @@ body.horizontal_menu #sidebar a,.main-menu.nav-tabs>li.active>a, .main-menu.nav-
 
 #sidebar li ul li.active a, #sidebar li ul li.active a, .main-menu.nav-tabs .active>a{
     color: @primary;
+    font-weight: 100;
 }
 
 #sidebar li ul a:hover,.main-menu.nav-tabs a:hover, .main-menu.nav>li>a:hover, .main-menu.nav-tabs>li.active>a:hover{
@@ -545,9 +546,4 @@ body .chosen-container-multi .chosen-choices li.search-choice, body .chosen-cont
 
 .badge{
     background-color: @rowCountBackgroundColor;
-}
-
-.activeFont {
-    color: @buttonText !important;
-    background-color: @button !important;
 }
