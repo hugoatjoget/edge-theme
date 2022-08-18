@@ -15,7 +15,7 @@ public class AngleTheme extends UniversalTheme {
 
     @Override
     public String getVersion() {
-        return "7.0.1";
+        return "7.0.4";
     }
 
     @Override
